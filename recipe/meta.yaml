@@ -10,8 +10,6 @@ source:
   sha256: 3adf713e2b99c78bea42bacaa5e4566919a7e473f2a0240702884a3c13b0b988
 
 build:
-  entry_points:
-    - llamaindex-cli = llama_index.core.command_line.command_line:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
@@ -67,7 +65,6 @@ test:
     - llama_index.core
   commands:
     - pip check
-    - llamaindex-cli --help
   requires:
     - pip
 

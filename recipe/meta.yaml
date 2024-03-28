@@ -1,5 +1,5 @@
 {% set name = "llama-index-core" %}
-{% set version = "0.10.24.post1" %}
+{% set version = "0.10.25.post1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/llama_index_core-{{ version }}.tar.gz
-  sha256: 8ddc3f5e967c91bd884a8cd4b233309c92f18aaec75998e405d6d7cc62e0e740
+  sha256: e4a384383a8dfd93b263d2c2159a49ad0feb3ad2df60e733928f689d80596c2b
 
 build:
   noarch: python
@@ -20,7 +20,7 @@ requirements:
     - poetry-core
     - pip
   run:
-    - llamaindex-py-client >=0.1.13,<0.2.0
+    - llamaindex-py-client >=0.1.15,<0.2.0
     - python >=3.8.1,<4.0
     - sqlalchemy >=1.4.49
     - dataclasses-json

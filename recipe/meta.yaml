@@ -1,5 +1,5 @@
 {% set name = "llama-index-core" %}
-{% set version = "0.10.26" %}
+{% set version = "0.10.27" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/llama_index_core-{{ version }}.tar.gz
-  sha256: 8ea27093a053aed79b7b5d80694152066ddaa5b70116308d48db382c76367a87
+  sha256: 01881a1943cb7b37f9f8147212d4a55caeef2d68ec498a0a1b864f79cf9d2be4
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - wrapt
-    - llamaindex-py-client >=0.1.15,<0.2.0
+    - llamaindex-py-client >=0.1.16,<0.2.0
     - python >=3.8.1,<4.0
     - sqlalchemy >=1.4.49
     - dataclasses-json

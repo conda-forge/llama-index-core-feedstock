@@ -1,5 +1,5 @@
 {% set name = "llama-index-core" %}
-{% set version = "0.10.36" %}
+{% set version = "0.10.37" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/llama_index_core-{{ version }}.tar.gz
-  sha256: 02f06bdefb5c6fd11dee1f65007a98decf3b266ad76136b7cfd3bec44efc5493
+  sha256: b025ebda79b4e4c85269c96f0632b8f6badd1000ce458d7600b79a1de5a61a44
 
 build:
   noarch: python
@@ -20,6 +20,8 @@ requirements:
     - poetry-core
     - pip
   run:
+    - jsonpath-ng <2.0.0,>=1.6.0
+    - spacy <4.0.0,>=3.7.1
     - wrapt
     - llamaindex-py-client >=0.1.18,<0.2.0
     - python >=3.8.1,<4.0

@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -20,11 +20,7 @@ requirements:
     - poetry-core
     - pip
   run:
-    - llama-cloud >=0.0.6,<0.0.7
-    - jsonpath-ng
-    - spacy
     - wrapt
-    - llamaindex-py-client >=0.1.18,<0.2.0
     - python >=3.8.1,<4.0
     - sqlalchemy >=1.4.49
     - dataclasses-json

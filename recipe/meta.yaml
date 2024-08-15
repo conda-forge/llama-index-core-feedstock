@@ -1,5 +1,5 @@
 {% set name = "llama-index-core" %}
-{% set version = "0.10.65" %}
+{% set version = "0.10.66" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/llama_index_core-{{ version }}.tar.gz
-  sha256: 4a7007ab0c0f4aa7b2e8788e206e9ad7ea3a7029b32309b9f2fed551dabbd3ba
+  sha256: 70f5cc9da6ee1c550dfde0bd8ab12e77128cc308714958e2cafb7affbc3f5c87
 
 build:
   noarch: python
@@ -28,7 +28,7 @@ requirements:
     - fsspec >=2023.5.0
     - httpx
     - nest-asyncio >=1.5.8,<2.0.0
-    - nltk >=3.8.2
+    - nltk >=3.8.1
     - numpy <2.0.0
     - openai >=1.1.0
     - pandas

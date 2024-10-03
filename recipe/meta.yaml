@@ -1,5 +1,5 @@
 {% set name = "llama-index-core" %}
-{% set version = "0.11.14" %}
+{% set version = "0.11.15" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/llama_index_core-{{ version }}.tar.gz
-  sha256: 6ff7be9f5bbb04be0d8064f76510edf79f8a9833ebae28b46261b274556827ca
+  sha256: 968cb311e806ccbc464a7a43a2d7465596d40e9378f8dceaa2c65985d6e1ca79
 
 build:
   noarch: python
@@ -20,6 +20,7 @@ requirements:
     - poetry-core
     - pip
   run:
+    - typing_extensions >=4.5.0
     - pydantic >=2.7.0,<3.0.0
     - wrapt
     - python >=3.8.1,<4.0

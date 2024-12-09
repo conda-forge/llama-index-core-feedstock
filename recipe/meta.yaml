@@ -1,5 +1,5 @@
 {% set name = "llama-index-core" %}
-{% set version = "0.12.3" %}
+{% set version = "0.12.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/llama_index_core-{{ version }}.tar.gz
-  sha256: 61fa0a1155a022b5b63c081d6709f5b57bae231b1c847c78e2052c93a231b90a
+  sha256: a5f9a7c4d5ebf90957681c3a6ee3f27556639e3f8b5e5d59125cf617ce272ab0
 
 build:
   noarch: python
@@ -23,7 +23,7 @@ requirements:
     - eval-type-backport >=0.2.0,<0.3.0
     - filetype >=1.2.0,<2.0.0
     - typing_extensions >=4.5.0
-    - pydantic >=2.7.0,<2.10.0
+    - pydantic >=2.8.0
     - wrapt
     - python >=3.8.1,<4.0
     - sqlalchemy >=1.4.49
@@ -36,7 +36,7 @@ requirements:
     - numpy
     - openai >=1.1.0
     - pandas
-    - tenacity >=8.2.0,!=8.4.0,<9.0.0
+    - tenacity >=8.2.0,!=8.4.0,<10.0.0
     - tiktoken >=0.3.3
     - typing-extensions >=4.5.0
     - typing_inspect >=0.8.0

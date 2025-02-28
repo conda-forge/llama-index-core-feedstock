@@ -1,5 +1,5 @@
 {% set name = "llama-index-core" %}
-{% set version = "0.12.20" %}
+{% set version = "0.12.21" %}
 {% set python_min = "3.9" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/llama_index_core-{{ version }}.tar.gz
-  sha256: c115264aa738f0ee77e60150084940b1e9df7e9d66c80e7c6091064bb20c57e1
+  sha256: bd51521197231b767e90394f1df9e8869016cfeb9bbe6599fa56a3c32ddd8ccc
 
 build:
   noarch: python

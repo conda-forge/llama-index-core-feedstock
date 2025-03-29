@@ -1,6 +1,6 @@
 {% set name = "llama-index-core" %}
-{% set version = "0.12.25" %}
-{% set python_min = "3.9" %}
+{% set version = "0.12.26" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/llama_index_core-{{ version }}.tar.gz
-  sha256: e0145617f0ab5358c30a7a716fa46dd3c40183bad1b87dd0cbfd3d196fbee8c4
+  sha256: 20b59f2087b05c62c0b10ec379aa08a64343f1251f4cacc42cee32eabd0a50d1
 
 build:
   noarch: python
@@ -21,6 +21,7 @@ requirements:
     - poetry-core
     - pip
   run:
+    - banks >=2.0.0,<3.0.0
     - eval-type-backport >=0.2.0,<0.3.0
     - filetype >=1.2.0,<2.0.0
     - typing_extensions >=4.5.0

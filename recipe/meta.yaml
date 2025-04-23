@@ -1,5 +1,5 @@
 {% set name = "llama-index-core" %}
-{% set version = "0.12.32" %}
+{% set version = "0.12.33" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/llama_index_core-{{ version }}.tar.gz
-  sha256: 7fae277ae88e0fd9507ee06b6ddb96b72ad2f57e4695047dd5e6d68014a0b6b9
+  sha256: 1324332ae3aa3fd3309e93566c1881c32e889591013fa5e17ac74f7441a70804
 
 build:
   noarch: python
@@ -37,7 +37,7 @@ requirements:
     - nltk >3.8.1
     - numpy
     - tenacity >=8.2.0,!=8.4.0,<10.0.0
-    - tiktoken >=0.3.3
+    - tiktoken >=0.9.0
     - typing-extensions >=4.5.0
     - typing_inspect >=0.8.0
     - requests >=2.31.0

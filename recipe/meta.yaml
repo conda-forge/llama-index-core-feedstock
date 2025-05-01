@@ -1,5 +1,5 @@
 {% set name = "llama-index-core" %}
-{% set version = "0.12.33.post1" %}
+{% set version = "0.12.34.post1" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/llama_index_core-{{ version }}.tar.gz
-  sha256: d257f6f594dfd9cf6435af02761a3d21f1427df5347f0e5e9fffe4024db6a724
+  sha256: 1673566b134c75e99f5f64e9ec8ca979078bee2e70efa40fd009562b68c18307
 
 build:
   noarch: python
@@ -21,9 +21,9 @@ requirements:
     - poetry-core
     - pip
   run:
-    - banks >=2.0.0,<3.0.0
+    - banks >=2.0.0,<3
     - eval-type-backport >=0.2.0,<0.3.0
-    - filetype >=1.2.0,<2.0.0
+    - filetype >=1.2.0,<2
     - typing_extensions >=4.5.0
     - pydantic >=2.8.0
     - wrapt
@@ -33,7 +33,7 @@ requirements:
     - deprecated >=1.2.9.3
     - fsspec >=2023.5.0
     - httpx
-    - nest-asyncio >=1.5.8,<2.0.0
+    - nest-asyncio >=1.5.8,<2
     - nltk >3.8.1
     - numpy
     - tenacity >=8.2.0,!=8.4.0,<10.0.0
@@ -41,10 +41,10 @@ requirements:
     - typing-extensions >=4.5.0
     - typing_inspect >=0.8.0
     - requests >=2.31.0
-    - aiohttp >=3.8.6,<4.0.0
+    - aiohttp >=3.8.6,<4
     - networkx >=3.0
-    - dirtyjson >=1.0.8,<2.0.0
-    - tqdm >=4.66.1,<5.0.0
+    - dirtyjson >=1.0.8,<2
+    - tqdm >=4.66.1,<5
     - pillow >=9.0.0
     - pyyaml >=6.0.1
   run_constrained:

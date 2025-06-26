@@ -1,5 +1,5 @@
 {% set name = "llama-index-core" %}
-{% set version = "0.12.43" %}
+{% set version = "0.12.44" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/llama_index_core-{{ version }}.tar.gz
-  sha256: 155a8602010fb7d8538e6b52b6a3e1fdc029ee02e71a70d2b0a2278de22c8fa9
+  sha256: d2fdbbd2bcb0dd289f3df305874dbc0d7532f39c3d725ca6d937c6fa18a8d249
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - hatchling
     - pip
   run:
-    - llama-index-workflows >=0.2.1
+    - llama-index-workflows >=1.0.1,<2
     - setuptools >=80.9.0
     - aiosqlite
     - banks >=2.0.0,<3

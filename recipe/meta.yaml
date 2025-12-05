@@ -21,7 +21,6 @@ requirements:
     - hatchling
     - pip
   run:
-    - typing-inspect >=0.8.0
     - platformdirs
     - llama-index-workflows >=2,<3,!=2.9.0
     - setuptools >=80.9.0

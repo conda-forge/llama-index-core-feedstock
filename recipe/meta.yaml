@@ -1,5 +1,5 @@
 {% set name = "llama-index-core" %}
-{% set version = "0.14.19" %}
+{% set version = "0.14.20" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/llama_index_core-{{ version }}.tar.gz
-  sha256: 7b17f321f0d965495402890991b2bfde49d4197bc46ca5970300cc7b9c2df6a2
+  sha256: 5ddb7ecba2131ecd0a452cd730c5361a407d3ffcdcfb1a319525ed8c9a7c423b
 
 build:
   noarch: python
@@ -23,7 +23,7 @@ requirements:
   run:
     - tinytag >=2.2.0
     - platformdirs
-    - llama-index-workflows >=2,<3,!=2.9.0
+    - llama-index-workflows >=2.14.0,<3
     - setuptools >=80.9.0
     - aiosqlite
     - banks >=2.3.0,<3
@@ -39,7 +39,7 @@ requirements:
     - fsspec >=2023.5.0
     - httpx
     - nest-asyncio >=1.5.8,<2
-    - nltk >3.8.1
+    - nltk >=3.9.3
     - numpy
     - tenacity >=8.2.0,!=8.4.0,<10.0.0
     - tiktoken >=0.7.0

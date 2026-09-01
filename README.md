@@ -3,7 +3,7 @@ About llama-index-core-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/llama-index-core-feedstock/blob/main/LICENSE.txt)
 
-Home: https://llamaindex.ai
+Home: https://llamaindex.ai/
 
 Package license: MIT
 
@@ -192,7 +192,4 @@ Feedstock Maintainers
 
 * [@jan-janssen](https://github.com/jan-janssen/)
 * [@pavelzw](https://github.com/pavelzw/)
-
-
-<!-- dummy commit to enable rerendering -->
 

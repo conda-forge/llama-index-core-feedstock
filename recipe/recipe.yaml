@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: llama-index-core
-  version: 0.14.24
+  version: 0.14.25
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/llama_index_core-${{ version }}.tar.gz
-  sha256: 4b2eb3af98eecf3579707ef018be0346bd851be2c7660102d88fab0457b95b61
+  sha256: 4ebfdc5317f0382501fa80262d7a7382715f80741cf41a7b11a52d4335e6f696
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -29,7 +29,6 @@ requirements:
     - setuptools >=80.9.0
     - aiosqlite
     - banks >=2.3.0,<3
-    - eval-type-backport >=0.2.0,<0.3.0
     - filetype >=1.2.0,<2
     - typing_extensions >=4.5.0
     - pydantic >=2.8.0
@@ -45,7 +44,6 @@ requirements:
     - numpy
     - tenacity >=8.2.0,!=8.4.0,<10.0.0
     - tiktoken >=0.7.0
-    - typing-extensions >=4.5.0
     - typing_inspect >=0.8.0
     - requests >=2.31.0
     - aiohttp >=3.8.6,<4
@@ -78,7 +76,7 @@ tests:
       pip_check: true
       python_version:
         - ${{ python_min }}
-        - "*"
+        - '*'
 
 about:
   summary: Interface between LLMs and your data

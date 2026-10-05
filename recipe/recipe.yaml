@@ -13,7 +13,7 @@ source:
   sha256: 4ebfdc5317f0382501fa80262d7a7382715f80741cf41a7b11a52d4335e6f696
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -34,7 +34,7 @@ requirements:
     - pydantic >=2.8.0
     - wrapt
     - python >=${{ python_min }},<4.0
-    - sqlalchemy >=1.4.49
+    - sqlalchemy-with-asyncio >=1.4.49
     - dataclasses-json
     - deprecated >=1.2.9.3
     - fsspec >=2023.5.0

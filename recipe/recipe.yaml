@@ -51,7 +51,7 @@ requirements:
     - tqdm >=4.66.1,<5
     - pillow >=9.0.0
     - pyyaml >=6.0.1
-    - sqlalchemy >=1.4.49
+    - sqlalchemy-with-asyncio >=1.4.49
   run_constraints:
     - beautifulsoup4 >=4.12.2,<5.0.0
     - langchain >=0.0.303

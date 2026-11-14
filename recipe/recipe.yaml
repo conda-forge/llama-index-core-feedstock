@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: llama-index-core
-  version: 0.14.25
+  version: 0.14.26
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/llama_index_core-${{ version }}.tar.gz
-  sha256: 4ebfdc5317f0382501fa80262d7a7382715f80741cf41a7b11a52d4335e6f696
+  sha256: dba58bc3fdb4e0a9fb52f8c53123d5a2576b3a8a991b65cd6d19796295f0bcd9
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -34,7 +34,6 @@ requirements:
     - pydantic >=2.8.0
     - wrapt
     - python >=${{ python_min }},<4.0
-    - sqlalchemy-with-asyncio >=1.4.49
     - dataclasses-json
     - deprecated >=1.2.9.3
     - fsspec >=2023.5.0
@@ -52,6 +51,7 @@ requirements:
     - tqdm >=4.66.1,<5
     - pillow >=9.0.0
     - pyyaml >=6.0.1
+    - sqlalchemy >=1.4.49
   run_constraints:
     - beautifulsoup4 >=4.12.2,<5.0.0
     - langchain >=0.0.303
